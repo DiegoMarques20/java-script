@@ -11,11 +11,18 @@
 
     <ul>
         <li>Para contar a quantidade de letras de uma string, usamos o <mark>length</mark>, no exemplo abaixo vamos perguntar uma pessoa qual o seu nome e informar a quantidade de letras. Além disso usamos também o <mark>document.write</mark></li>
+        <p></p>
+        <li>O <mark>document.write</mark> faz com que a mensagem aparece dentro da página do site.</li>
+        <p></p>
+        <li>Para usarmos uma quebra de linha no JavaScript utilizamos a tag desta maneira <mark>.<.b.r./.>.</mark> Ignore os pontos.</li> 
     </ul>
 
     <script>
         var nome = window.prompt('Qual o seu nome?')
-        document.write (`Seu nome tem ${nome.length} letras`)
+        document.write(`Olá ${nome} seu nome possui ${nome.length} letras <br/>`) 
+        document.write(`O seu nome em letras maiúsculas fica assim ${nome.toUpperCase()}<br/>`) 
+        document.write(`O seu nome em letras minúsculas ficam assim ${nome.toLowerCase()}<br/>`)
+        
     </script>
     
 </body>
