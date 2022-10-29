@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma entre duas variáveis</title>
+    <style>
+        mark.codigo {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando duas variáveis</h1>
+
+    <ul type="square">
+        <li>Para somarmos duas variáveis utilizando o prompt, precisamos declarar como number os itens digitados, por padrão o prompt entende que tudo digitado é uma string.</li>
+        <p></p>
+        <li>Para isso usamos o <mark>Number.parseInt(n)</mark> (Neste caso retorna número inteiro)  ou <mark>Number.parseFloat(n)</mark> (Neste caso retorna número quebrado, 1.4, 4.5)</li>
+        <p></p>
+        <li>Então para esse nosso exemplo ficaria assim: <br>
+            <mark class="codigo">
+                var num = Number.parseInt(window.prompt('Digite um número')) <br>
+                var num2 = Number.parseInt(window.prompt ('Digite outro número')) <br>
+                var s = num + num2 <br>
+                window.alert('A soma dos números digitados é ' + s) <br>
+            </mark>
+        
+        
+        </li>
+    </ul>
+
+    <script>
+        var num = Number.parseInt(window.prompt('Digite um número'))
+        var num2 = Number.parseInt(window.prompt ('Digite outro número'))
+        var s = num + num2
+        window.alert('A soma dos números digitados é ' + s)
+    </script>
+    
+</body>
+</html>
