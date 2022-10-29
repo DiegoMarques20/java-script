@@ -15,6 +15,15 @@
         <li>O <mark>document.write</mark> faz com que a mensagem aparece dentro da página do site.</li>
         <p></p>
         <li>Para usarmos uma quebra de linha no JavaScript utilizamos a tag desta maneira <mark>.<.b.r./.>.</mark> Ignore os pontos.</li> 
+        <p></p>
+        <li>Para passarmos um valor em reais, euros ou dolares, usamos a seguinte configuração: <br>
+            <mark>
+                var n1 = 3500.50 <br>
+                n1.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'}) <br>
+                n1.toLocaleString('pt-BR', {style: 'currency', currency:'USD'}) <br>
+                n1.toLocaleString('pt-BR', {style: 'currency', currency:'EUR'}) <br>
+            </mark>
+        </li>
     </ul>
 
     <script>
