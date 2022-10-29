@@ -9,6 +9,10 @@
         mark.codigo {
             background-color: aqua;
         }
+
+        mark.codigo2 {
+            background-color: bisque;
+        }
     </style>
 </head>
 <body>
@@ -28,6 +32,18 @@
             </mark>
             <p></p>
             <li>Para passarmos um valor número para string, ao contrário que fizemos, utilizamos <mark>String(n)</mark>.</li>
+            <p></p>
+            <li>Invés de contaternarmos, podemos usar o nova forma do script também, neste caso usamos craze dentro da frase e usamos o $ dentro de colchetes para "chamar" as variáveis. Segue exemplo:<br>
+
+             <mark class="codigo2">
+                 nome = 'Diego' <br>
+                             idade = '31'<br>
+                             time = 'Galo'<br>
+                             `O ${nome} tem ${idade} e seu time predileto é o ${time}`<br>
+             </mark>
+
+
+            </li>
         
         
         </li>
@@ -38,7 +54,7 @@
         var num2 = Number.parseInt(window.prompt ('Digite outro número'))
         var s = num + num2
         window.alert('A soma dos números digitados é ' + s)
+        window.alert(`A soma entre ${num} e ${num2} é igual a ${s}`)
     </script>
-    
 </body>
 </html>
