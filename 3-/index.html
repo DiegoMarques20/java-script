@@ -13,10 +13,13 @@
         <li>Quando usamos o window.prompt como vimos anteriormente, abre uma janela no navegador para o úsuario digitar algo.</li>
         <p></p>
         <li>Podemos armazenar esse dado dentro de uma variável, por exemplo: <mark>var nome =  window.prompt('Qual o seu nome?')</mark> </li>
+        <p></p>
+        <li>Depois desse armanezamento, podemos usar um  <mark>window.alert('É um grande prazer te conhecer, ' + nome + '!')</mark>. Neste caso contatenamos </li>
     </ul>
 
     <script>
-        window.prompt('Qual o seu nome?')
+       var nome = window.prompt('Qual o seu nome?')
+       window.alert('É um grande prazer te conhecer, ' + nome + '!')
     </script>
     
 </body>
