@@ -15,7 +15,7 @@
 <body>
 
     <h1>Iniciando Estudos com Dom</h1>
-
+    <p>Teste</p>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong></p>
 
@@ -23,11 +23,36 @@
         <li>O DOM serve para selecionar e alterar elementos dentro de uma página, utilizando JavaScript. Usamos o Get Element podemos escolher se vamos selecionar por Marca, ID, Nome, Classe ou Seletor. </li>
         <p></p>
         <li>Por seletor é o mais atual e talvez mais recomendado.</li>
+        <p></p>
+        <li>Exemplo do uso do Seletor, mudando a cor do texto e o fundo. <br>
+            <mark>
+                var d = window.document.querySelector('div.oi')<br>
+                d.style.color = 'blue'<br>
+                d.style.background = 'white'<br>
+            </mark>
+        </li>
+        <p></p>
+        <li>Exemplo usando GetElement para alterar um texto de uma tag p, como temos mais de uma tag p, informamos o número da tag conforme no exemplo abaixo. <br>            
+        <mark>
+            var e = window.document.getElementsByTagName('p')[0]<br>
+            e.innerText= 'Olá'<br>
+        </mark>
+
+
+        </li>
     </ul>
 
-    <div>Clique em mim</div>
+    <div class="oi">Clique em mim</div>
 
     <script>
+
+        var d = window.document.querySelector('div.oi')
+        d.style.color = 'blue'
+        d.style.background = 'white'
+
+        var e = window.document.getElementsByTagName('p')[0]
+        e.innerText= 'Olá'
+
 
     </script>
 </body>
