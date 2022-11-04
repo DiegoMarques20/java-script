@@ -19,6 +19,12 @@
 </head>
 <body>
 
+    <ul>
+        <li></li>
+        <p></p>
+        <li></li>
+    </ul>
+
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
@@ -29,6 +35,7 @@
         function clicar() {
             
             a.innerText = 'Clicou!'
+            a.style.background = 'red'
         }
 
         function entrar() {
