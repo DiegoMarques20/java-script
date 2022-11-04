@@ -15,14 +15,51 @@
             text-align: center;
             font-size: 1.5em;
         }
+
+        strong {
+
+            background-color:aqua ;
+            }
+
+            h1{
+                text-align: center;
+            }
     </style>
 </head>
 <body>
 
+    <h1>Eventos DOM</h1>
+
     <ul>
-        <li></li>
+        <li>Para usarmos o Dom e fazer interações com o HTML, existem algumas ações exemplo quando o usuário utiliza o mouse. Segue alguns exemplo abaixo:</li>
         <p></p>
-        <li></li>
+        <li> <strong>onmouseenter</strong> = <mark>Quando o usuário entre com o mouse dentro do campos.</mark><br>
+             <strong>onmouseout</strong> = <mark>Quando o usuário sai com o mouse do campos. </mark><br>
+             <strong>onmousemove</strong> = <mark>Quando o usuário move o mouse dentro do campo.</mark><br>
+             <strong>onmousedown</strong> = <mark>Quando o usuário clicar e segura dentro do campos .</mark><br>
+             <strong>onmouseup</strong> = <mark>Quando o usuário solta o click dento do campo.</mark><br>
+             <strong>onclick</strong> = <mark>Quando o usuário clicar dentro do campo.</mark><br>
+            
+        </li>
+    </ul>
+
+    <ul>
+        <li>Para utilizarmos o mecanismo acima, primeiro informamos dentro da tag os componentes acima conforme nesse exemplo:<br> <mark>div id="area" onclick="clicar()" onmouseenter="entrar()"</mark><br> </li>
+        <p></p>
+        <li>Depois abrimos um Script para utilizar os comandos, como passamos o id com o nome de area, usamos o getElementById, como no exemplo abaixo: <br> <mark>var a = window.document.getElementById('area')</mark> <br> 
+         </li>
+         <p></p>
+         <li>Depois usamos uma function como nesse exemplo: (Nesse caso uma menssagem vai aparecer Clicou quando o usuário clicar e o fundo do campo vai ficar em vermelho)<br> <br>
+
+            <mark>
+                function clicar() {<br>
+                
+                    a.innerText = 'Clicou!'<br>
+                    a.style.background = 'red'}<br>
+            </mark>
+            
+        
+        </li>
     </ul>
 
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
