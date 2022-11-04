@@ -62,12 +62,20 @@
         </li>
     </ul>
 
+    <ul>
+        <li>Podemos utilizar outro método para ligar o HTML e JavaScript</li>
+    </ul>
+
     <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         Interaja...
     </div>
 
     <script>
          var a = window.document.getElementById('area') 
+
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mouseout'sair)
 
         function clicar() {
             
@@ -81,6 +89,7 @@
 
         function sair() {
             a.innerText = 'Saiu!'
+            a.style.background = 'green'
         }
        
 
