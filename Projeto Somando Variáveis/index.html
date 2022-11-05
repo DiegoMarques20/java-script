@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Valores</title>
+    <style>
+        body {           
+            
+            background-color: bisque;
+            color: black;
+            font-size: 1.2em;
+            
+
+        }
+
+        h1 {
+
+            text-align: center;
+        }
+
+        div#res {
+
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somando números</h1>
+
+    <script>
+        var nome = window.prompt('Olá, qual o seu nome?')
+        document.write(`Muito prazer ${nome}, você pode usar a calculadora abaixo para fazer cálculos de soma  =)`)
+
+
+    </script> <br>
+
+    <h2>Calculadora</h2> <br>
+
+    <input type="number" required name="n" id="n"> +
+
+    <input type="number" required name="n1" id="n1"> + 
+
+    <input type="number" required name="n2" id="n2">
+
+    <input type="button" value="Calcular" onclick="somar()">
+
+    <div id="res">Resultado</div>
+
+    <script>
+        function somar () {
+
+            var primeiro = window.document.getElementById('n') 
+            var segundo = window.document.getElementById('n1')
+            var terceiro = window.document.getElementById('n2')
+
+            var resul = window.document.getElementById('res')
+
+            var n0 = Number(primeiro.value)
+            var n1 = Number(segundo.value)
+            var n2 = Number(terceiro.value)
+
+            var resultado1 = n0 + n1 + n2 
+
+            res.innerHTML = (`A soma dos números ${n0}, ${n1} e ${n2} é de <strong>${resultado1}</strong>.`)
+
+
+        }
+    </script>
+    
+    
+</body>
+</html>
