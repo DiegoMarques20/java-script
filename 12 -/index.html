@@ -12,44 +12,37 @@
     <ul>
         <li>IF e Else são condições utilizadas para as funções acontecerem. Podemos utilizar apenas o <mark>If</mark> com uma condição, e podemos utilizar o <mark>else</mark>, para mais de uma condição.</li>
         <p></p>
-        <li></li>
+        <li>Segue um exemplo para utilizarmos o if com informações dentro de um navegador, utilozamos o input e depois dentro do script uma function.</li>
+
+        <p><img src="imagens/exemplo-codigo.PNG" alt="Exemplo Codigo"></p>
     </ul>
 
     <h2>Sistema de Multa</h2>
 
     Velocidade do carro: <input type="number" name="vel" id="vel" required>Km/h
-    <input type="button" value="Verificar">
-
-
-
+    <input type="button" value="Verificar" onclick="calcular()">
+    
+    <div id="resul"></div>
 
     <script>
-        var vel = 80
-        document.write(`A sua velocidade no radar foi de ${vel}Km/h  -`)
+    
 
-        if (vel > 60) {
-            document.write(`Você ultrapassou a velocidade permitida. <strong>MULTADO!</strong>-`)
+        function calcular () {
+            
+            var velo = window.document.getElementById('vel')
+            var res = window.document.getElementById('resul')
+            var vell = Number(vel.value)
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vell}Km/h</strong></p>
+            `
+            if (vell > 60) {
+                res.innerHTML += `<p>Você está <STRONG>MULTADO</STRONG> por excesso de velocidade</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
         }
-
-        document.write(`Dirija sempre usando o cinto de segurança`)
-
-    </script> <br>
+    </script> 
 
 
-    <script> 
-
-        var país = 'França'
-
-        document.write(`Vivendo em <strong>${país}</strong> então é `)
-
-        if (país == 'Brasil') {
-
-            document.write('<strong> Brasileiro!</strong>')
-        } else {
-            document.write(' <strong>Estrangeiro!</strong>')
-        }
-
-    </script>
     
 </body>
 </html>
