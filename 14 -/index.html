@@ -10,10 +10,40 @@
             text-align: center;
         }
     </style>
+
+    <h1>Condições Aninhadas (Várias Condições)</h1>
+
+
+    <input type="number" name="idade" required id="idade">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res"></div>
 </head>
 <body>
 
-    <h1>Condições Aninhadas (Várias Condições)</h1>
+
+    <script>
+
+        function verificar() {
+
+        var anos = window.document.getElementById('idade')
+        var resul = window.document.getElementById('res')
+
+        var anoss = Number(idade.value)
+
+        if (idade < 18) {
+
+            resul.innerHTML = `<p>Você é maior de idade</p>`
+
+        } else if (idade > 18) {
+
+            resul.innerHTML = `<p>Você é menor de idade</p>`
+        } else {
+            `<p>Você é menor de idade</p>`
+        }
+
+    }
+    </script>
     
 </body>
 </html>
