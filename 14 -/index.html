@@ -9,17 +9,24 @@
         h1 {
             text-align: center;
         }
+
+        body {
+            background-color: cadetblue ;
+            color: black ;
+        }
     </style>
+</head>
+<body>
 
     <h1>Condições Aninhadas (Várias Condições)</h1>
+
+    <h2>Informe abaixo sua idade, e vamos verificar se você é maior de idade ou não.</h2>
 
 
     <input type="number" name="idade" required id="idade">
     <input type="button" value="Verificar" onclick="verificar()">
 
     <div id="res"></div>
-</head>
-<body>
 
 
     <script>
@@ -31,15 +38,13 @@
 
         var anoss = Number(idade.value)
 
-        if (idade < 18) {
+        if (anoss > 18) {
 
-            resul.innerHTML = `<p>Você é maior de idade</p>`
+            resul.innerHTML = `<p><mark>Você é maior de idade</mark></p>`;
 
-        } else if (idade > 18) {
-
-            resul.innerHTML = `<p>Você é menor de idade</p>`
         } else {
-            `<p>Você é menor de idade</p>`
+
+            resul.innerHTML = `<p><mark>Você é menor de idade</mark></p>`;
         }
 
     }
