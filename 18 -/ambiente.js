@@ -1,4 +1,4 @@
 let num = [4]
-num[1] = 6
+num.push(6)
 
 console.log(`Nosso vetor é ${num}`)
