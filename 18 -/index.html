@@ -9,6 +9,11 @@
         h1 {
             text-align: center;
         }
+
+        h2,h3 {
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
 
@@ -17,6 +22,8 @@
     <h2>Array</h2>
 
     <p><mark>São variáveis compostas que possuem vários elementos e esses elementos são identificados como índices, exemplo [0,1,2,3..]</mark> <br> <p>Para identificarmos essa variáveis usamos o LET inves do VAR, então ficaria assim <strong>let aut = [Jeep,Fiat,Audi,Ferrari]</strong></p></p>
+
+        <h3>Add elemento dentro do let</h3> 
 
     <ul>
         <li>Para add um elementro detro do let, fazemos como no exemplo abaixo, colocamos entre colchetes o índice a ser add o sinal de igual e o valor. no Exemplo abaixo estamos add no índice 1 o número 6.</li>
@@ -31,6 +38,9 @@
 
         </li>
         <p></p>
+
+        <h3>Add automaticamente o elementro dentro da váriavel.
+        </h3>
         <li>Quando não soubermos qual índice está vázio para passar essa informação igualmente acima, utilizamos o <mark>num.push(6)</mark>. Neste caso é add automaticamente o elementro dentro da váriavel.</li>
         <p></p>
         <li> <br>
@@ -42,8 +52,10 @@
 
         </li>
         <p></p>
-        <li>Quando quizermos colocar os elementeos em ordem crescente, usamos o <mark>num.sort()</mark> E para mostrarmos um elemento em específico usamos o <strong>console.log(num[2])</strong> Onde num é o nome da variável e o 2 é o índice que precisamos </li>
+        <h3>Elementos em ordem crescente</h3>
+        <li>Quando quizermos colocar os elementos em ordem crescente, usamos o <mark>num.sort()</mark> E para mostrarmos um elemento em específico usamos o <strong>console.log(num[2])</strong> Onde num é o nome da variável e o 2 é o índice que precisamos </li>
         <p></p>
+        <h3>Simplificando utilizando o for in</h3>
         <li>Podemos simplificar utilizando o for in, conforme exemplo abaixo: <br>
 
             <mark> <br>
@@ -55,7 +67,16 @@
                     console.log(`A posição ${pos} tem o valor ${num[pos]}`) <br>
                 } <br>
             </mark>
-
+        </li>
+        <p></p>
+        <h3>Encontrarmos um índice de uma determinada variável</h3>
+        <li>Para encontrarmos um índice de uma determinada variável, utilizamos o <mark>num.indexOf(audi) <br> </mark> Com isso ele retorna o número do índice do elemento. <br>
+        
+            <mark>
+                let auto = ["ferrari","audi","BMW","Mercedes"] <br>
+                let pos = auto.indexOf("audi") <br>
+                console.log(`O carro audi está na posição ${pos}`) <br>
+            </mark>
         </li>
     </ul>
 <body>
