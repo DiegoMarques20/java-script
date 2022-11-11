@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Objetos em JavaScript</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Objetos em JavaScript</h1>
     
+    <ul>
+        <li>Utilizamos Array para coisas simples e intermediárias, para processos mais avançados, devemos utilizar <strong>objetos</strong> de acordo com a necessidade.
+        Para utilizarmos objevos, invés de passarmos colchetes que fazemos com array, vamos utilizar <strong>chaves. {}</strong></li>
+        <p></p>
+        <li></li>
+        <p></p>
+        <li> <br>
+
+            <mark>
+                let amigo = {nome:'Diego', sexo:'M', peso:85.0, emagrecer(p){ <br>
+                    console.log('Emagreceu') <br>
+                    this.peso += p <br>
+                }} <br>
+                
+                amigo.emagrecer(-2) <br>
+                console.log(`O ${amigo.nome} emagreceu e está pesando ${amigo.peso}Kg agora`) <br>
+            </mark>
+        </li>
+    </ul>
 </body>
 </html>
