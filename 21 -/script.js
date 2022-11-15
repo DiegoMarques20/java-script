@@ -1,1 +1,1 @@
-alert('Olá, tenha um bom dia! =) ')
+alert('Olá, tenha um bom dia! =)) ')
