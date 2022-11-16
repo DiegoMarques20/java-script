@@ -16,15 +16,13 @@
 
     <section>
         <div id="dados">
-            <p>Número Inicial:</p>
-            <input type="number" name="inicio" id="inicio">
+            <p>Número Inicial:  <input  required  type="number" name="inicio" id="inicio"></p>
             <label for="inicio"></label>
-            <p>Número Final:</p>
-            <input type="number" name="final" id="final">
+            <p>Número Final:  <input type="number" required name="final" id="final"></p>
             <label for="final"></label>
-            <p>Intervalo entre os números:</p>
-            <input type="number" name="intervalo" id="intervalo">
+            <p>Intervalo entre os números: <input type="number" required name="intervalo" id="intervalo"></p>
             <label for="intervalo"></label>
+            <input type="button" value="Contar" onclick="contar()">
         </div>
         <div id="res">
             Preparando o resultado
