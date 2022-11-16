@@ -10,7 +10,7 @@ function contar () {
         window.alert('[ERRO] Faltam dados a serem preenchidos!')
 
      } else {
-            res.innerHTML = 'Contando...'
+            res.innerHTML = 'Contando... ,<br>'
 
             let i  = Number(ini.value)
             let f  = Number(fim.value)
