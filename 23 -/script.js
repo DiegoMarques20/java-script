@@ -15,6 +15,10 @@ function contar () {
             let i  = Number(ini.value)
             let f  = Number(fim.value)
             let p = Number(inter.value)
+            if (p <= 0) {
+                window.alert('Intervalo inválido!')
+                p = 1
+            }
             if (i < f) {
                 // Contagem crescente
 
