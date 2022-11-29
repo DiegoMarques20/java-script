@@ -13,14 +13,15 @@
     </header>
 
     <section>
+        <div>
         Número (entre 1 a 100):
-        <input type="number" name="num" id="num">
-        <input type="button" value="Adicionar">
-        <br><select name="lista" id="lista" size="6"></select>
-        <div>
-
+        <input type="number" name="num" id="num" required>
+        <input type="button" value="Adicionar" onclick="adicionar()">
+        <br><br><select name="lista" id="lista" size="6"></select>
+        <br><br><input type="button" value="Finalizar"> 
         </div>
-        <div>
+        <div id="res">
+
 
         </div>
     </section>
