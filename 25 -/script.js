@@ -35,8 +35,8 @@ function adicionar() {
     }
     num.value = ''
     num.focus()
-
-    function finalizar() {
+}
+    function final() {
         if (valores.length == 0){
             window.alert('Adicione valores antes de finalizar!')
         } else {
@@ -60,4 +60,3 @@ function adicionar() {
             res.innerHTML += `<p>A média dos valores digitados é ${media}</p>`
         }
     }
- }
